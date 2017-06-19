@@ -1,6 +1,6 @@
 <p align="center">
   <a href="https://git-scm.com/" target="_blank">
-    <img alt="logo git" src="https://git-scm.com/images/logo@2x.png" width="auto" height="150px"/>
+    <img alt="logo git" src="https://git-scm.com/images/logos/downloads/Git-Logo-2Color.png" width="auto" height="150px"/>
   </a>
 </p>
 
