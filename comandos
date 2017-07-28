@@ -251,6 +251,10 @@ Volte para o terminal
 // apos commmitado e enviado para o git de outras maquinas puxar atualizacao nas estacoes de trabalho com git pull origin master
 // pronto
 
+Enviar tags 
+// enviar tags com git push origin nomeDaTag 
+// enviar todas tags com git push --tags
+// puxar as tags em outro pc com git pull
 
 // arrumar o README.md no gitHub
 // vai no gitHub e busca um projeto grande ex: > cakephp > abri o arquivo README.md > vai em raw e copia os estilos

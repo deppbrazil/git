@@ -6,10 +6,8 @@
 
 ## .Git
 
-Aprenda a gerenciar projetos com .git
-
 ``` bash
-nessa documentação você vai aprender a gerenciar seus projetos com git e confirgurar seu repositório remoto.
+Configurando e usando o git para versionamento de projetos.
 ```
 
 
