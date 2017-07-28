@@ -22,6 +22,19 @@ git init  (iniciar um .git na pasta atual para controlar a versao via terminal)
 
 
 
+#ALTERANDO PASTA DE INICIALIZAÇÃO NO MAC E CRIANDO 'ALIAS'
+
+// criar arquivo .bash_profile e dentro dele colocar:
+alias myapps='cd /caminho/do/seu/htdocs'
+# myapps é só um exemplo, você pode usar qualquer nome para o seu alias
+depois chamar o nome do 'alias' no terminal
+
+// ou para o terminal já iniciar na pasta colocar dentro do .bash_profile
+cd /caminho/desejado/
+
+
+
+
 #BASICOS PARA STAGE AREA
 
 cd nome da pasta  (entrar nas pastas e subpastas)
