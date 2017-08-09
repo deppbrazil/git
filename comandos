@@ -1,284 +1,390 @@
-#CONFIG DE USUARIO
+
+# CONFIGURAÇÃO DE USUÁRIO #
 
 git config --global user.name "nome"
 git config --global user.email "e-mail"
 
+--------------------------------------------------
 
-
----
-
-
-
-#PASTA DE INICIALIZACAO
+# PASTA DE INICIALIZAÇÃO #
 
 // Windows
 btn direto no gitBash > propriedades > iniciar em > colocar caminho
 
-// Mac - criar alias
+// Mac - alias
 criar arquivo .bash_profile e dentro dele colocar:
 alias myapps='cd /caminho/do/seu/htdocs'
 
-ou para o terminal já iniciar na pasta colocar dentro do .bash_profile
+// Ou para o terminal já iniciar na pasta colocar dentro do .bash_profile
 cd /caminho/desejado/
 
 *myapps é só um exemplo, você pode usar qualquer nome para o seu alias
 depois chamar o 'alias' no terminal
 
+--------------------------------------------------
 
+# CHAVES SSH #
 
----
-
-
-
-#CHAVES SSH
-
+// No terminal colocar:
 ssh-keygen
-//prescione enter
-//gerar senha se quiser
-//se nao + enter
-//vai gerar caminho da chave gerada (geralmente cria na pasta de perfil de usuario)
-//abrir pasta com as chaves
-//abrir o id_rsa.pub com bloco de notas e copiar o codigo
-//ir no gitHub/bitbucket em account settings > ssh keys > add ssh keys > colocar titulo + key > add
-//confirmar com senha do gitHub
 
+// Pressione enter
 
+// Gerar senha se quiser
 
----
+// Se não + enter
 
+// Vai gerar caminho da chave gerada (geralmente cria na pasta de perfil de usuário)
 
+// Abrir pasta com as chaves
 
-#INICIALIZACAO DO REPOSITORIO LOCAL
+// Abrir o id_rsa.pub com bloco de notas e copiar o código
 
-// a mais utilizada
-git init (inicia um .git para gerenciamento de versao)
+// No gitHub/bitbucket em account settings > ssh keys > add ssh keys > colocar título + key > add
 
-// mais utilizado com equipes em server remoto tipo bare
-git init --bare (inicia repositorio .git em modo bare)
+// Confirmar com senha do gitHub
 
+--------------------------------------------------
 
+# INICIALIZACAO DO REPOSITORIO LOCAL #
 
----
+// Mais utilizada
+git init 
+(inicia um .git para gerenciamento de versao)
 
+// Aconselhado usar com equipes em server remoto do tipo bare
+git init --bare 
+(inicia repositorio .git em modo bare)
 
+--------------------------------------------------
 
-#BASICOS PARA INICIO DE PROJETO
+# APARECER PASTA .GIT #
 
-cd nome da pasta  (entrar nas pastas e subpastas)
-cd ..  (voltar um nivel)
-cd .. Pasta1/Pasta2/Pasta3 (vai entrar em Pasta1/Pasta2/Pasta3)
-clear  (limpar terminal)
-git status  (informa o estatus do projeto e se tem algo a ser comitado)
-git add nome do arq.  (isso add arq. ao stage area)
-git reset HEAD nome do arquivo.extensao (sai do stage area e volta ele pro repositorio local)
-git add '*.txt'  (adicionar todos arquivos txt ao stage area)
-git add .  (adicionar todos os arquivos de todas extensoes ao stage area)
-git checkout -- nomeDoArquivo.extensao (volta ao estado do commit da branch master)
-git rm nome do arquivo (deleta arquivos sem volta)
-git diff (mostra quais altercoes foram feitas no arquivo antes de ir para stage area)
-git diff --staged  (mostra quais altercoes foram feitas no arquivo que foi adicionado ao stage area)
+// Windows
+painel de controle > aparência e personalização >
+opções de pasta > modo de exibição > pastas e arq. ocultos >
+mostrar arquivos, pastas e unidades ocultas.
 
+// Mac 
+defaults write com.apple.Finder AppleShowAllFiles TRUE
+defaults write com.apple.Finder AppleShowAllFiles FALSE
 
+--------------------------------------------------
 
----
+# BÁSICOS PARA INICIO DE PROJETO #
 
+cd nome da pasta  
+(entrar nas pastas e subpastas)
 
+cd ..  
+(voltar um nível)
 
-#GITIGNORE
+cd .. Pasta1/Pasta2/Pasta3 
+(vai entrar em Pasta1/Pasta2/Pasta3)
 
-// ignorar arquivos no controle do git
-criar um arq .gitignore e dentro dele colocar nome e extenção do arquivo que não quer ser controlado, ou ate mesmo uma pasta, sendo 1 por linha
+clear  
+(limpar terminal)
 
-Ex:
-dentro do arquivo do .gitignore
-linha 1 = .gitignore (vai ignorar o proprio arquivo .gitignore)
-linha 2 = nomedoaquivo.txt (vai ignorar o arquivo .txt)
-linha 3 = temp/ (a barra no final indica diretorio, ou seja, uma pasta)
+git status  
+(informa o estatus do projeto e se tem algo a ser commitado)
 
-quando voce der um git status nao vai aparecer os arquivos mencionados dentro do .gitignore
+git add nome do arq.  
+(isso add arq. ao stage área)
 
+git reset HEAD nome do arquivo.extensao 
+(sai do stage area e volta ele pro repositório local)
 
+git add '*.txt'  
+(adicionar todos arquivos txt ao stage área)
 
----
+git add .  
+(adicionar todos os arquivos de todas extensões ao stage área)
 
+git checkout -- nomeDoArquivo.extensão 
+(volta ao estado do commit da branch master)
 
+git rm nome do arquivo 
+(deleta arquivos sem volta)
 
-#COMMITS
+git diff 
+(mostra quais alterações que foram feitas no arquivo antes de ir para stage área)
 
-git commit -m "mensagem do commit"  (commitar o projeto com mensagem)
-git commit -a -m "mensagem do commit" (pula a etapa de add e commita direto)
+git diff --staged 
+(mostra quais alterções foram feitas no arquivo que foi adicionado ao stage área)
 
-git checkout -- nome do aquivo  (voltar o arquivo original do ultimo commit)
-git rm nome do arquivo (deleta o arquivo sem volta, e resolve conflito no stage em caso de remocao dos arquivos do ultimo commit)
-git log  (historico de commit com hora + usuario)
-git log -p  (historico mais detalhado dos commits)
-git log -p -1  (ultimo commit detalhado)
-git log --pretty=oneline  (mostar a chave de cada commit e a mensagem)
-gitk  (abre interface grafica com relatorios de alteracoes dos commit)
-git commit --amend -m "novo nome do commit"  (substitui ultimo commit feito com o commit atual)
+--------------------------------------------------
 
+# GITIGNORE #
 
+// Ignorar arquivos no controle do git
+criar um arq com extensão .gitignore e dentro dele colocar nome e extenção do arquivo que não quer ser controlado, ou ate mesmo uma pasta, sendo 1 por linha.
 
----
+*Ex:
+// Dentro do arq. do .gitignore
+Linha 1 = .gitignore 
+(vai ignorar o próprio arq. .gitignore)
 
+Linha 2 = nomedoaquivo.txt 
+(vai ignorar o arq. .txt)
 
+Linha 3 = temp/ 
+(a barra no final indica diretório, ou seja, uma pasta)
 
-#TAGS
+// Quando voce der um git status nao vai aparecer os arquivos mencionados dentro do .gitignore
 
-git tag -a v1.0 -m "Versao 1.0"  (cria uma tag anotada (-a) do ultimo commit)
-git tag -a v1.0 (colar aqui chave do commit) -m "Versao 1.0"  (cria tag anotada para um commit especifico com base na chave)
-git tag  (lista tags)
-git show v1.0  (mostrar detalhes especificos sobre as tag)
-git checkout v1.0  (vai para versao v1.0 do sistema)
-git checout master  (volta para branch master)
-git tag -d v1.0  (deletar tag criada)
+--------------------------------------------------
 
-// enviar tags com 
-git push origin nomeDaTag 
-// enviar todas tags com 
+# BRANCHS #
+
+// Default (branch master)
+
+git branch teste  
+(joga uma cópia da branch master na branch teste)
+
+git checkout teste  
+(entra na branch teste)
+
+git checkout -b teste 
+(cria a branch teste com base na master e ja entra dentro)
+
+git checkout master 
+(volta para branch master)
+
+git merge teste  
+(faz o merge - *importante estar dentro da master)
+
+git branch -d teste  
+(deleta branch teste)
+
+--------------------------------------------------
+
+# TAGS #
+
+git tag -a v1.0 -m "Versão 1.0"
+(cria uma tag anotada (-a) do último commit)
+
+git tag -a v1.0 (colar aqui chave do commit) -m "Versão 1.0"  
+(cria tag anotada para um commit específico com base na chave)
+
+git tag  
+(lista tags)
+
+git show v1.0  
+(mostrar detalhes específicos sobre a tag)
+
+git checkout v1.0  
+(vai para versão v1.0 do projeto)
+
+git checout master  
+(volta para branch master)
+
+git tag -d v1.0  
+(deletar tag criada)
+
+--------------------------------------------------
+
+# COMMITS #
+
+git commit -m "mensagem do commit"
+(commitar o projeto com mensagem)
+
+git commit -a -m "mensagem do commit"
+(pula a etapa de add ao stage e commita direto)
+
+git checkout -- nome do aquivo  
+(voltar o arq. original do ultimo commit)
+
+git rm nome do arq. 
+(deleta o arquivo sem volta, e resolve conflito no stage em caso de remoção dos arq. do último commit)
+
+git log  
+(histórico de commit com hora + usuário)
+
+git log -p 
+(histórico detalhado dos commits)
+
+git log -p -1  
+(último commit detalhado)
+
+git log --pretty=oneline  
+(mostar a chave de cada commit e a mensagem)
+
+gitk  
+(abre interface gráfica)
+
+git commit --amend -m "novo nome do commit"  
+(substitui último commit feito com o commit atual)
+
+git push origin nomeDaTag
+// Ou
 git push --tags
-// puxar as tags em outro pc com 
+(envia tags pro remoto) 
+
 git pull
+(puxar as tags)
 
+--------------------------------------------------
 
+# CONFLITOS #
 
----
+// Quando criamos uma branch teste com base na master e fazemos alterações e commitamos, e logo após entramos na branch master fazemos alterações também e commitamos, ao dar o merge na branch master isso trará alguns conflitos, que ao abrir o arquivo alterado ele trará os commits da branch teste + commit da branch master, teremos entao que resolver esses conflitos na mão e logo após fazer um novo commit.
 
+--------------------------------------------------
 
+# REPOSITÓRIOS REMOTOS #
 
-#BRANCHS
+git remote 
+(lista repositórios adicionados)
 
-// branch master (default)
-git branch teste  (cria uma branch com nome teste com base no master)
-git checkout teste  (isso coloca uma copia do sistema da branch [master] no branch [teste])
-git checkout -b teste (cria a branch teste com base na master e ja entra dentro da branch teste)
-git checkout master (volta para branch master)
-git merge teste  (fazer o merge da branch [teste] para a branch [master] mas tem que estar dentro da branch master)
-git branch -d teste  (deleta branch teste)
+// Por padrao ele ira retornar origin, pois é o repositório de origem
 
+git push origin master 
+(vai enviar seu projeto da branch master commitado ao repositorio remoto origin)
 
+git pull origin master 
+(puxa atualizações do remoto)
 
----
+git fetch origin branch + [o nome da branch] 
+(com isso ele puxa do repositório remoto e joga dentro da branch)
 
+--------------------------------------------------
 
+# REPOSITORIO REMOTO EM MAQUINA VITUAL #
 
-#CONFLITOS
+// Com servidor local em maquina virtual rodando windowns
 
-// quando criamos uma branch teste com base na master e fazemos alteracoes nela e commitamos, e logo apos entramos na branch master fazemos alteracoes tambem e commitamos, ao dar o merge na branch master isso trara um conflito, que ao abrir o arquivo alterado ele trara os commits da branch teste + commit da branch master, teremos entao que resolver esses conflitos na mao e logo apos fazer um novo commit.
- 
+// Dentro da pasta do repositório server criar pasta "projetos1"
 
+// Agora vamos dar acesso a essa pasta via rede
 
----
+// Ver nome da máquina em painel de controle > sistema e segurança > sistema
 
+// Ai abrir configurações de sistema
 
+// Depois va em: proteção do sistema > nome do computador > nome completo do computador : vmserver (nome da máquina como servidor remoto)
 
-#REPOSITORIOS REMOTOS
+// Ou pode ser acesso por ip também
 
-git remote (lista repositorios adicionados)
-// por padrao ele ira retornar origin, pois é o repositório de origem
+// Agora botão direito na pasta projetos criada > compartilhar com > pessoas específicas > todos > adicionar > permissão: leitura e gravação > compartilhar
 
-git push origin master (vai enviar seu projeto commitado ao repositorio remoto origin)
-git pull origin master (puxa atualizacoes do remoto)
-git fetch origin branch + [o nome da branch] (com isso ele puxa do repositorio remoto e joga dentro da branch)
+// Se for agora na sua máquina e colocar > na barra de url em meu computador > digitar \\vmserver > enter > agora vai aparecer a pasta projetos dentro do repositório em rede, isso fez um acesso via rede a esta pasta
 
+// *EX: dentro da pasta projetos criar "cliente1" essa sera a pasta a ser trabalhada e compartilhada em equipe
 
+// Instalar o git na máquina do servidor
 
----
+// Entrar na pasta "cliente1" e iniciar o git init --bare 
+(vai criar um monte de pastas pois o repositorio foi iniciado em modo "bare")
 
+// git init 
+(repositorio pardão não aconselhado quando se trabalha com equipes)
 
+// git init --bare
+(mais aconselhado quando se trabalha em equipe)
 
-#REPOSITORIO REMOTO EM MAQUINA VITUAL
+// Voltando para o pc de desenvolvimento
 
-// com servidor local em maquina virtual rodando windowns.
-// dentro da pasta do repositorio server criar pasta "projetos1" 
-// agora vamos dar acesso a essa pasta via rede
-// ver nome da maquina em painel de controle > sistema e seguranca > sistema
-// vai abrir configuracoes de sistema
-// depois va em: protecao do sistema > nome do computador > nome completo do computador : vmserver (nome da maquina como servidor remoto)
-// ou pode ser acesso por ip tambem
-// agora botao direito na pasta projetos criada > compartilhar com > pessoas especificas > todos > adicionar > permissao: leitura e gravacao > compartilhar.
-// se for agora na sua maquina e colocar > na barra de url em meu computador > digitar \\vmserver > enter > agora vai aparecer a pasta projetos dentro do repositorio em rede, isso fez um acesso via rede a esta pasta.
-// EX: dentro da pasta projetos criar "cliente1" essa sera a pasta a ser trabalhada e compartilhada em equipe.
-// instalar o git na maquina do servidor
-// entrar na pasta "cliente1" e iniciar o git init --bare (vai criar um monte de pastas pois o repositorio foi iniciado em modo "bare")
-// git init (repositorio padrao - se trabalhar em equipe com ele voce tera de fazer muitas manobras com os branchs, entao melhor utilizar o --bare)
+// Primeiro acesso no terminal exige essa config.: 
+git clone file:////vmserver/projetos/cliente1
 
-// voltando para o pc de desenvolvimento
-// primeiro acesso no terminal exige essa configuracao: git clone file:////vmserver/projetos/cliente1
-// isso vai clonar o que esta no servidor remoto e trazer para sua maquina local na pasta atual
-// caso voce queira mudar o nome da pasta clonada adicionar nome no final ficando assim:
+// Isso vai clonar o que esta no servidor remoto e trazer para sua máquina local na pasta atual
+
+// Caso voce queira mudar o nome da pasta clonada adicionar nome no final ficando assim:
 git clone file:////vmserver/projetos/cliente1 prjrede1
-// isso vai clonar dentro da pasta prjrede1 todos os arquivos do servidor remoto
-// na sua pasta local colocar arquivos base dos sistema add e commitar
-// porem os arquivos ainda NAO estao no servidor remoto
-// se clonar novamente com nome prjrede2, ira clonar o projeto vazio
-// para enviar o commit do prjrede1 para o servidor remoto sera necessario o push
-// para isso precisa saber o nome do remote, com:
 
-git remote (e ele vai retornar)
-origin
+// Isso vai clonar dentro da pasta prjrede1 todos os arq. do servidor remoto
 
-// por padrao ele coloca o nome do remote como origin
-// entao para enviar o commit da maquina prjrede1 para o servidor remoto, fazer:
+// Na sua pasta local colocar arq. base dos sistema add e commitar
 
-git push origin master (git envia os arquivos para o servidor origin que estao agora no branch master)
-<aguardar...>
+// Porém os arq. ainda não estao no servidor remoto
 
-//testar agora os arquivos enviado ao servidor remoto, note que se voce entra na pasta do servidor elas vao aparecer diferentes do repositorio da maquina, porque sua estrutura de pastas é diferente, os arquivos enviados estarao dentro de "objects".
+// Se clonar novamente com nome prjrede2, irá clonar o projeto vázio
 
+// Para enviar o commit do prjrede1 para o servidor remoto sera necessário o push
 
+// Para isso precisa saber o nome do remote, com:
+git remote 
+(e ele vai retornar [origin])
 
----
+// Por padrão ele coloca o nome do remote como origin
 
+// Entao para enviar o commit da máquina prjrede1 para o servidor remoto, fazer:
+git push origin master 
+(git envia os arq. para o servidor origin que estão na branch master)
 
+< Aguardar... >
 
-#GITHUB
-Criar repositorio no GitHub
-// ir para o perfil e criar o primeiro repositorio
-resositores > new > nome do respositorio + descricao > escolher publico ou privado [privado somente conta paga] > em seguida voce escolhe se voce quer um arquivo reame e um aquivo .gitignore > create repositore > pronto foi criado com sucesso
+// Testar agora os arquivos enviado ao servidor remoto, note que se voce entra na pasta do servidor elas vao aparecer diferentes do repositorio da máquina, porque sua estrutura de pastas é diferente estão em modo --bare, os arquivos enviados estarao dentro de "objects"
 
+--------------------------------------------------
 
-Volte para o terminal
-// ir em clone or download e escolher clone com ssh (mais adequado)
-// no terminal colocar git clone e colar a conexao ssh
-// se pedir dar yes pra confirmar
-// entrar na pasta com cd e nome da pasta
-// confirme com git status para ver se criou o .git na pasta
-// note que na pasta local foi adicionado o repositorio do git + arquivo README.md
-// coloque os arquivo nas pasta e add e commita
-// agora enviar para o repositorio do git com: git push origin master
-// para puxar esse repositorio em outra pasta na maquina local ou outro pc fazer mesmo procedimento de clonar o repositorio do git por ssh
-// apos commmitado e enviado para o git de outras maquinas puxar atualizacao nas estacoes de trabalho com git pull origin master
-// pronto
+# GITHUB #
+// Criar repositorio no GitHub:
+settings> resositores > new > nome do repositório + descrição > escolher publico ou privado 
+[privado somente conta paga] > em seguida voce escolhe se voce quer um arq. readme e um arq. .gitignore > create repositore > pronto foi criado com sucesso
 
 
+// Volte para o terminal
 
----
+// Em clone or download e escolher clone com ssh (mais adequado)
 
+// No terminal colocar git clone e colar a conexão ssh
 
+// Se pedir dar yes pra confirmar
 
-#OPENSOURCE
+// Entrar na pasta com cd e nome da pasta
 
-// colaborar com projetos openSource no GitHub
-// procurar projeto desejado e dar um fork, isso vai trazer uma copia do projeto ao seu repositorio do GitHub
-// depois clonar pra sua maquina local via ssh
-// fazer alteracoes de colaboracao
-// add e commita
-// mandar para o seu repositorio no GitHub com: git push origin master
-// agora mandar para o proprietario
-// clicar em pull requeste > new pull request > escolher a branch se quiser > create pull request
-// colocar titulo da requisicao e colocar comentario da colaboracao que voce fez
-// send pull request
-// pronto foi enviado para o autor para aprovacao
+// Confirme com git status para ver se criou o .git na pasta
 
-// para o autor vai aparecer esse pull requeste
-// o autor tem a opcao de fazer um merge de contribuicoes que mandaram no pull request
-// da proxima vez que alguem clonar esse projeto vai com as alteracoes aprovadas pelo autor
+// Note que na pasta local foi adicionado o repositório do git + arquivo README.md
+
+// Coloque os arquivo nas pasta depois add e commita com uma msg
+
+// Agora enviar para o repositório do git com:
+git push origin master
+
+// Para puxar esse repositório em outra pasta na máquina fazer mesmo procedimento de clonar o repositorio do git por ssh
+
+// Após commmitado e enviado para o git de outras maquinas puxar atualizacao nas estacoes de trabalho com:
+git pull origin master
+
+// Pronto
+
+--------------------------------------------------
+
+# OPENSOURCE #
+
+// Colaborar com projetos openSource no GitHub
+
+// Procurar projeto desejado e dar um fork, isso vai trazer uma cópia do projeto ao seu repositório do GitHub
+
+// Depois clonar pra sua máquina local via ssh
+
+// Fazer alterações de colaboração
+
+// Add e commita
+
+// Mandar para o seu repositório no GitHub com: 
+git push origin master
+
+// Agora mandar para o proprietário
+
+// Clicar em:
+pull requeste > new pull request > escolher a branch se quiser > create pull request
+
+// Colocar título da requisição e colocar comentário da colaboração que voce fez 
+
+// Depois
+send pull request
+
+// Pronto foi enviado para o autor para aprovação
+
+// Para o autor vai aparecer esse pull request
+
+// O autor tem a opção de fazer um merge de contribuições que mandaram no pull request
+
+// Da proxima vez que alguém clonar esse projeto vai com as alterações aprovadas pelo autor.
 
 {FIM...}
-
-
----
-
 
 
