@@ -7,7 +7,7 @@
 ## .Git
 
 ``` bash
-Configurando e usando o git para versionamento de projetos.
+Usando .GIT para seus projetos.
 ```
 
 
