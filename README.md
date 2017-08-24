@@ -1,14 +1,13 @@
-<p align="center">
-  <a href="https://git-scm.com/" target="_blank">
-    <img alt="logo git" src="https://git-scm.com/images/logos/downloads/Git-Logo-2Color.png" width="auto" height="150px"/>
-  </a>
-</p>
+# .Git
 
-## .Git
+## Gerenciando seus projetos com git
 
-``` bash
-Usando .GIT para seus projetos.
-```
+* Agilidade
+* Organização
+* Controle total 
+
+
+
 
 
 
