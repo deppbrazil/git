@@ -1,29 +1,4 @@
 
-# INICIALIZACAO DO REPOSITORIO LOCAL #
-
-// Mais utilizada
-git init 
-(inicia um .git para gerenciamento de versao)
-
-// Aconselhado usar com equipes em server remoto do tipo bare
-git init --bare 
-(inicia repositorio .git em modo bare)
-
---------------------------------------------------
-
-# APARECER PASTA .GIT #
-
-// Windows
-painel de controle > aparência e personalização >
-opções de pasta > modo de exibição > pastas e arq. ocultos >
-mostrar arquivos, pastas e unidades ocultas.
-
-// Mac 
-defaults write com.apple.Finder AppleShowAllFiles TRUE
-defaults write com.apple.Finder AppleShowAllFiles FALSE
-
---------------------------------------------------
-
 # BÁSICOS PARA INICIO DE PROJETO #
 
 cd nome da pasta  
