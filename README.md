@@ -1,15 +1,5 @@
-# .Git
+# .Git #
 
-## Gerenciando seus projetos com git
+## Versionando seus projetos com git
 
-* Agilidade
-* Organização
-* Controle total 
-
-
-
-
-
-
-
-
+> No inicio achava um bixo de 7 cabecas, hoje não vivo sem =)

@@ -1,42 +1,40 @@
-
 # BÁSICOS PARA INICIO DE PROJETO #
 
-cd nome da pasta  
+* `cd nome da pasta`  
 (entrar nas pastas e subpastas)
 
-cd ..  
+* `cd ..`  
 (voltar um nível)
 
-cd .. Pasta1/Pasta2/Pasta3 
+* `cd .. Pasta1/Pasta2/Pasta3` 
 (vai entrar em Pasta1/Pasta2/Pasta3)
 
-clear  
+* `clear` 
 (limpar terminal)
 
-git status  
+* `git status`  
 (informa o estatus do projeto e se tem algo a ser commitado)
 
-git add nome do arq.  
+* `git add nome do arq.`  
 (isso add arq. ao stage área)
 
-git reset HEAD nome do arquivo.extensao 
+* `git reset HEAD nome do arquivo.extensao`
 (sai do stage area e volta ele pro repositório local)
 
-git add '*.txt'  
+* `git add '*.txt'`  
 (adicionar todos arquivos txt ao stage área)
 
-git add .  
+* `git add .` 
 (adicionar todos os arquivos de todas extensões ao stage área)
 
-git checkout -- nomeDoArquivo.extensão 
+* `git checkout -- nomeDoArquivo.extensão` 
 (volta ao estado do commit da branch master)
 
-git rm nome do arquivo 
+* `git rm nome do arquivo` 
 (deleta arquivos sem volta)
 
-git diff 
+* `git diff` 
 (mostra quais alterações que foram feitas no arquivo antes de ir para stage área)
 
-git diff --staged 
+* `git diff --staged` 
 (mostra quais alterções foram feitas no arquivo que foi adicionado ao stage área)
-

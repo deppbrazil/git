@@ -1,23 +1,21 @@
-
 # BRANCHS #
 
-// Default (branch master)
+* Default (branch master)
 
-git branch teste  
+* `git branch teste`  
 (joga uma cópia da branch master na branch teste)
 
-git checkout teste  
+* `git checkout teste`
 (entra na branch teste)
 
-git checkout -b teste 
+* `git checkout -b teste`
 (cria a branch teste com base na master e ja entra dentro)
 
-git checkout master 
+* `git checkout master` 
 (volta para branch master)
 
-git merge teste  
+* `git merge teste` 
 (faz o merge - *importante estar dentro da master)
 
-git branch -d teste  
+* `git branch -d teste`  
 (deleta branch teste)
-
