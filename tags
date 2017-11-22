@@ -22,3 +22,11 @@ git checout master
 git tag -d v1.0  
 (deletar tag criada)
 
+git push origin nomeDaTag
+// Ou
+git push --tags
+(envia tags pro remoto) 
+
+git pull
+(puxar as tags)
+

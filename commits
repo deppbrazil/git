@@ -31,11 +31,4 @@ gitk
 git commit --amend -m "novo nome do commit"  
 (substitui último commit feito com o commit atual)
 
-git push origin nomeDaTag
-// Ou
-git push --tags
-(envia tags pro remoto) 
-
-git pull
-(puxar as tags)
 
