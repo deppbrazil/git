@@ -22,9 +22,10 @@
 (deletar tag criada)
 
 * `git push origin nomeDaTag`
-// Ou
-`git push --tags`
-(envia tags pro remoto) 
+(envia a tag especifica)
 
-`git pull`
+* `git push --tags`
+(envia todas as tags) 
+
+* `git pull`
 (puxar as tags)
