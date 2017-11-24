@@ -30,5 +30,5 @@
 * `git pull`
 (puxar as tags)
 
-* > Caso precise deletar a tag enviada pro remoto
-`git tag -d nomeDaTag` + `git push origin :refs/tags/nomeDaTag`
+* `git tag -d nomeDaTag` + `git push origin :refs/tags/nomeDaTag`
+(Para deletar a tag enviada pro remoto)

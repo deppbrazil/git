@@ -11,4 +11,4 @@ alias myapps='cd /caminho/do/seu/htdocs'
 `cd /caminho/desejado/`
 
 * > myapps é só um exemplo, você pode usar qualquer nome para o seu alias
-depois chamar o 'alias' no terminal
+depois chamar o `alias` no terminal
