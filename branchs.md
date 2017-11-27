@@ -19,3 +19,6 @@
 
 * `git branch -d teste`  
 (deleta branch teste)
+
+* Depois atualizar o Readme.md
+ `git commit -a -m "nome do commit"`
