@@ -20,7 +20,7 @@
 * `git remote rename origin [novo nome]`
 (renomeia o orign)
 
-* `git add [apelido do repo] [link ssh]`
+* `git remote add [apelido do repo] [link ssh]`
 (adicioando repositório)
 
 * `git fetch origin branch + [o nome da branch]`
