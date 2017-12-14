@@ -1,7 +1,6 @@
 # PAR DE CHAVES SSH #
 
-* No terminal colocar:
-`ssh-keygen`
+* No terminal colocar: `ssh-keygen`
 
 * Pressione enter
 

@@ -12,6 +12,6 @@ criar um arq com extensão .gitignore e dentro dele colocar nome e extenção do
 (vai ignorar o arq. .txt)
 
 * Linha 3 = temp/ 
-(a barra no final indica diretório, ou seja, uma pasta)
+(a barra no final indica diretório, ou seja, "temp" seria uma pasta)
 
 * > Quando voce der um `git status` nao vai aparecer os arquivos mencionados dentro do .gitignore
