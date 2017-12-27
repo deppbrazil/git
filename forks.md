@@ -1,6 +1,6 @@
 # ATUALIZANDO SEUS FORKS # 
 
-## Peguei como referência o [blog](https://www.raphaelfabeni.com.br/updating-your-fork/) marvilhoso do [Raphael Fabeni](https://www.raphaelfabeni.com.br/) ##
+## Peguei como referência o [blog](https://www.raphaelfabeni.com.br/updating-your-fork/) maravilhoso do [Raphael Fabeni](https://www.raphaelfabeni.com.br/) ##
 
 * `git remote add upsteam [link do repo]` (adicionando um remoto de upstream)
 * `git fetch upstream` (vai atualizar o upstream)
