@@ -11,7 +11,5 @@ criar um arq com extensão .gitignore e dentro dele colocar nome e extenção do
 * Linha 2 = nomedoaquivo.txt 
 (vai ignorar o arq. .txt)
 
-* Linha 3 = temp/ 
-(a barra no final indica diretório, ou seja, "temp" seria uma pasta)
-
-* > Quando voce der um `git status` nao vai aparecer os arquivos mencionados dentro do .gitignore
+* Linha 3 = `temp/` ou `.temp` ou `/temp`
+(isso oculta toda a pasta do controle de versão)
