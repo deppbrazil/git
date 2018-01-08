@@ -15,3 +15,4 @@
 > Em seguida aparece segestões como `git rebase --edit-todo` para ver e editar ou `git rebase --continue` para arrumar todos os conflitos, então: 
 * `git rebase --continue`
 > Você vai notar que agora o readme.md está fazendo comparações com um possível conflito, pelo menos no meu caso aconteceu isso, então elimine o que não é mais util e edite o readme.md como quiser, em seguida de um `git add .` e depois o commit e pronto agora os `push` vão sem erro =D
+> Se quando você der o `git status` e aparecer uma mensagem que você ainda precisa dar o rebase ou edit todo, como você já deu o push e os arquivos já foram pro remoto, delete a pasta raiz local e cole ela denovo com `git clone [link do repo]` e já é ;)
