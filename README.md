@@ -1,6 +1,6 @@
 # .Git #
 
-## Versionando seus projetos com git
+## Versionando seus projetos com git ##
 
 * [Alias](https://github.com/deppbrazil/git/blob/master/alias.md)
 > Atalho para caminhos de pastas pelo terminal 
