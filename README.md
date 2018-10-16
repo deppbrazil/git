@@ -32,7 +32,6 @@
 > Principais comandos básicos do gitBash
 * [Tags](https://github.com/deppbrazil/git/blob/master/tags.md)
 > Tudo sobre tags, como usar, quando usar e para que servem
-___
-> Plus - Não faz parte do Git, mas é um diferencial para editar arquivos de configuração manualmente.
+> Plus - Não faz parte do Git, mas é um diferencial para editar arquivos de configuração manualmente.    
 * [Mostrar pasta oculta](https://github.com/deppbrazil/git/blob/master/folder-hide-show.md)
-> Para visualizar as pastas ocultas no Mac e no Windows, as vezes é necessários para editar manualmente arquivos da pastas .git que é oculta
+> Para visualizar as pastas ocultas no Mac e no Windows, as vezes é necessários para editar manualmente arquivos da pastas .git que é oculta   
